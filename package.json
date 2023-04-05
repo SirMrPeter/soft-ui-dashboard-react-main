@@ -1,0 +1,110 @@
+{
+  "name": "soft-ui-dashboard-react",
+  "version": "1.2.0",
+  "author": "Ambro-Dev",
+  "license": "SEE LICENSE IN <https://www.gwarant-service.pl>",
+  "description": "ReactJS version of Soft UI Dashboard by Creative Tim",
+  "bugs": {
+    "url": "https://www.gwarant-service.pl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/soft-ui-dashboard-react.git"
+  },
+  "engines": {
+    "node": "14 || 15 || 16",
+    "npm": ">=6"
+  },
+  "dependencies": {
+    "@emotion/cache": "11.7.1",
+    "@emotion/react": "11.7.1",
+    "@emotion/styled": "11.6.0",
+    "@fullcalendar/daygrid": "5.10.0",
+    "@fullcalendar/interaction": "5.10.0",
+    "@fullcalendar/react": "5.10.0",
+    "@fullcalendar/timegrid": "5.10.0",
+    "@mui/icons-material": "5.4.1",
+    "@mui/lab": "^5.0.0-alpha.123",
+    "@mui/material": "^5.11.13",
+    "@mui/styled-engine": "5.4.1",
+    "@mui/system": "^5.11.13",
+    "@react-jvectormap/core": "1.0.1",
+    "@react-jvectormap/world": "1.0.0",
+    "@react-spring/web": "^9.7.1",
+    "@testing-library/jest-dom": "5.16.2",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "@videosdk.live/rtc-js-prebuilt": "^0.3.29",
+    "axios": "^1.3.2",
+    "chart.js": "3.4.1",
+    "chroma-js": "2.4.2",
+    "dotenv": "^16.0.3",
+    "dropzone": "5.9.2",
+    "flatpickr": "4.6.9",
+    "html-react-parser": "1.4.8",
+    "i18next": "^22.4.14",
+    "lottie-react-web": "^2.2.2",
+    "mui-file-dropzone": "^4.0.2",
+    "pdfmake": "^0.2.7",
+    "prop-types": "15.8.1",
+    "react": "17.0.2",
+    "react-chartjs-2": "3.0.4",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "17.0.2",
+    "react-flatpickr": "3.10.7",
+    "react-github-btn": "1.2.1",
+    "react-hook-form": "^7.43.8",
+    "react-i18next": "^12.2.0",
+    "react-images-viewer": "1.7.1",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "6.2.1",
+    "react-scripts": "^5.0.1",
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-table": "7.7.0",
+    "socket.io-client": "^4.6.1",
+    "stylis": "4.0.13",
+    "stylis-plugin-rtl": "2.1.1",
+    "survey-core": "^1.9.79",
+    "survey-creator-core": "^1.9.79",
+    "survey-creator-react": "^1.9.79",
+    "survey-react-ui": "^1.9.79",
+    "web-vitals": "2.1.4",
+    "yup": "0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "install:peer-deps": "npm install --legacy-peer-deps"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.7.1"
+  }
+}

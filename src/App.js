@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -23,14 +23,14 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 
-// Soft UI Dashboard React examples
+// Soft UD - Demo examples
 import Sidenav from "examples/Sidenav";
 import Configurator from "examples/Configurator";
 
-// Soft UI Dashboard React themes
+// Soft UD - Demo themes
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
 
@@ -39,10 +39,10 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
-// Soft UI Dashboard React routes
+// Soft UD - Demo routes
 import routes from "routes";
 
-// Soft UI Dashboard React contexts
+// Soft UD - Demo contexts
 import { useSoftUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 // Images

@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v1.0.0
+* Soft UD - Demo - v1.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-pro-react

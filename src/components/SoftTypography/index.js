@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react

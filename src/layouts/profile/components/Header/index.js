@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -23,20 +23,20 @@ import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftAvatar from "components/SoftAvatar";
 
-// Soft UI Dashboard React examples
+// Soft UD - Demo examples
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 
-// Soft UI Dashboard React icons
+// Soft UD - Demo icons
 import Cube from "examples/Icons/Cube";
 import Document from "examples/Icons/Document";
 import Settings from "examples/Icons/Settings";
 
-// Soft UI Dashboard React base styles
+// Soft UD - Demo base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
 // Images

@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -18,13 +18,13 @@ import Grid from "@mui/material/Grid";
 import Tooltip from "@mui/material/Tooltip";
 import Icon from "@mui/material/Icon";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftAvatar from "components/SoftAvatar";
 import SoftTypography from "components/SoftTypography";
 import SoftButton from "components/SoftButton";
 
-// Soft UI Dashboard React base styles
+// Soft UD - Demo base styles
 import typography from "assets/theme/base/typography";
 
 // VR dashboards components

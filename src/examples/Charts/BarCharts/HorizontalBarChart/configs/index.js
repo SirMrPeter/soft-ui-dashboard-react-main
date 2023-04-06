@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -13,7 +13,7 @@ Coded by Ambro-Dev
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Soft UI Dashboard React base styles
+// Soft UD - Demo base styles
 import typography from "assets/theme/base/typography";
 
 function configs(labels, datasets) {

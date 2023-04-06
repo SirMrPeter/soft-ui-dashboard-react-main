@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -19,11 +19,11 @@ import CountUp from "react-countup";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
-// Soft UI Dashboard React base styles
+// Soft UD - Demo base styles
 import colors from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
 

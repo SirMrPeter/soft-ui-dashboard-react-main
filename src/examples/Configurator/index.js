@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -26,7 +26,7 @@ import Icon from "@mui/material/Icon";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftButton from "components/SoftButton";
@@ -34,7 +34,7 @@ import SoftButton from "components/SoftButton";
 // Custom styles for the Configurator
 import ConfiguratorRoot from "examples/Configurator/ConfiguratorRoot";
 
-// Soft UI Dashboard React context
+// Soft UD - Demo context
 import {
   useSoftUIController,
   setOpenConfigurator,

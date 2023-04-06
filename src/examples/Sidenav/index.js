@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -27,12 +27,12 @@ import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftButton from "components/SoftButton";
 
-// Soft UI Dashboard React examples
+// Soft UD - Demo examples
 import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
 import SidenavCard from "examples/Sidenav/SidenavCard";
 
@@ -40,7 +40,7 @@ import SidenavCard from "examples/Sidenav/SidenavCard";
 import SidenavRoot from "examples/Sidenav/SidenavRoot";
 import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
 
-// Soft UI Dashboard React context
+// Soft UD - Demo context
 import { useSoftUIController, setMiniSidenav } from "context";
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {

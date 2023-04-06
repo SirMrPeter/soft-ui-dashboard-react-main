@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -21,10 +21,10 @@ import { useLocation } from "react-router-dom";
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 
-// Soft UI Dashboard React context
+// Soft UD - Demo context
 import { useSoftUIController, setLayout } from "context";
 
 function DashboardLayout({ children }) {

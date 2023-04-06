@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftAvatar from "components/SoftAvatar";

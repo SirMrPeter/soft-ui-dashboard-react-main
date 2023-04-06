@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -17,7 +17,7 @@ Coded by Ambro-Dev
   The boxShadow() function helps you to create a box shadow for an element
  */
 
-// Soft UI Dashboard React helper functions
+// Soft UD - Demo helper functions
 import rgba from "assets/theme/functions/rgba";
 import pxToRem from "assets/theme/functions/pxToRem";
 

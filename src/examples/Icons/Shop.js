@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -16,7 +16,7 @@ Coded by Ambro-Dev
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Soft UI Dashboard React base styles
+// Soft UD - Demo base styles
 import colors from "assets/theme/base/colors";
 
 function Shop({ color, size }) {

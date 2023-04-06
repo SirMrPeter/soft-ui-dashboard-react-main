@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -14,7 +14,7 @@ Coded by Ambro-Dev
 */
 
 /** 
-  All of the routes for the Soft UI Dashboard React are added here,
+  All of the routes for the Soft UD - Demo are added here,
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
@@ -35,12 +35,12 @@ Coded by Ambro-Dev
   10. The `component` key is used to store the component of its route.
 */
 
-// Soft UI Dashboard React layouts
+// Soft UD - Demo layouts
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
-// Soft UI Dashboard React icons
+// Soft UD - Demo icons
 import Document from "examples/Icons/Document";
 import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";

@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -25,16 +25,16 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftButton from "components/SoftButton";
 
-// Soft UI Dashboard React examples
+// Soft UD - Demo examples
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
-// Soft UI Dashboard React base styles
+// Soft UD - Demo base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
 function DefaultNavbar({ transparent, light, action }) {

@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -24,7 +24,7 @@ import SoftInputWithIconRoot from "components/SoftInput/SoftInputWithIconRoot";
 import SoftInputIconBoxRoot from "components/SoftInput/SoftInputIconBoxRoot";
 import SoftInputIconRoot from "components/SoftInput/SoftInputIconRoot";
 
-// Soft UI Dashboard React contexts
+// Soft UD - Demo contexts
 import { useSoftUIController } from "context";
 
 const SoftInput = forwardRef(({ size, icon, error, success, disabled, ...rest }, ref) => {

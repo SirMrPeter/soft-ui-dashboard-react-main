@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v3.1.0
+* Soft UD - Demo - v3.1.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-pro-react
@@ -14,9 +14,9 @@ Coded by Ambro-Dev
 */
 
 /**
- * The base breakpoints for the Soft UI Dashboard React.
+ * The base breakpoints for the Soft UD - Demo.
  * You can add new breakpoints using this file.
- * You can customized the breakpoints for the entire Soft UI Dashboard React using thie file.
+ * You can customized the breakpoints for the entire Soft UD - Demo using thie file.
  */
 
 const breakpoints = {

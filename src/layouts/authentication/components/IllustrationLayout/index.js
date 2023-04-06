@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -19,15 +19,15 @@ import PropTypes from "prop-types";
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
-// Soft UI Dashboard React examples
+// Soft UD - Demo examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
-// Soft UI Dashboard React page layout routes
+// Soft UD - Demo page layout routes
 import pageRoutes from "page.routes";
 
 // Images

@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v3.1.0
+* Soft UD - Demo - v3.1.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-pro-react
@@ -14,15 +14,15 @@ Coded by Ambro-Dev
 */
 
 /**
- * The base border styles for the Soft UI Dashboard React.
+ * The base border styles for the Soft UD - Demo.
  * You can add new border width, border color or border radius using this file.
- * You can customized the borders value for the entire Soft UI Dashboard React using thie file.
+ * You can customized the borders value for the entire Soft UD - Demo using thie file.
  */
 
-// Soft UI Dashboard React Base Styles
+// Soft UD - Demo Base Styles
 import colors from "assets/theme/base/colors";
 
-// Soft UI Dashboard React Helper Functions
+// Soft UD - Demo Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { grey } = colors;

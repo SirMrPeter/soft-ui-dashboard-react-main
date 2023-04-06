@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -24,17 +24,17 @@ import { Radar } from "react-chartjs-2";
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
 // RadarChart configurations
 import configs from "examples/Charts/RadarChart/configs";
 
-// Soft UI Dashboard React base styles
+// Soft UD - Demo base styles
 import colors from "assets/theme/base/colors";
 
-// Soft UI Dashboard React helper functions
+// Soft UD - Demo helper functions
 import rgba from "assets/theme/functions/rgba";
 
 function RadarChart({ title, description, chart }) {

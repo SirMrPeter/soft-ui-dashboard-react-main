@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -16,7 +16,7 @@ Coded by Ambro-Dev
 // @mui material components
 import { styled } from "@mui/material/styles";
 
-// Soft UI Dashboard React components
+// Soft UD - Demo components
 import SoftButton from "components/SoftButton";
 
 export default styled(SoftButton)(({ theme, ownerState }) => {

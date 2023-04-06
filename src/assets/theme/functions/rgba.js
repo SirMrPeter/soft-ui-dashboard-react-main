@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -18,7 +18,7 @@ Coded by Ambro-Dev
   to convert the hex code into rgb for using it inside the rgba color format.
  */
 
-// Soft UI Dashboard React helper functions
+// Soft UD - Demo helper functions
 import hexToRgb from "assets/theme/functions/hexToRgb";
 
 function rgba(color, opacity) {

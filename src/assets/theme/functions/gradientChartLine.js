@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -17,7 +17,7 @@ Coded by Ambro-Dev
   The gradientChartLine() function helps you to create a gradient color for the chart line
  */
 
-// Soft UI Dashboard React helper functions
+// Soft UD - Demo helper functions
 import rgba from "assets/theme/functions/rgba";
 
 function gradientChartLine(chart, color, opacity = 0.2) {

@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Soft UI Dashboard React - v4.0.0
+* Soft UD - Demo - v4.0.0
 =========================================================
 
 * Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
@@ -18,7 +18,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "App";
 
-// Soft UI Dashboard React Context Provider
+// Soft UD - Demo Context Provider
 import { SoftUIControllerProvider } from "context";
 import { AuthProvider } from "context/AuthProvider";
 import { SocketProvider } from "context/socket";

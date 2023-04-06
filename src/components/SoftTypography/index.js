@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 /**
 =========================================================
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
+* Copyright 2022 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
  =========================================================
 
@@ -75,7 +76,6 @@ SoftTypography.propTypes = {
     "bottom",
   ]),
   textGradient: PropTypes.bool,
-  children: PropTypes.node.isRequired,
   opacity: PropTypes.number,
 };
 

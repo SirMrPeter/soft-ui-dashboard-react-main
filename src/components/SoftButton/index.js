@@ -3,10 +3,10 @@
 * Soft UI Dashboard React - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-pro-react
+* Copyright 2021 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
 =========================================================
 

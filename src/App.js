@@ -3,10 +3,10 @@
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
+* Copyright 2022 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
  =========================================================
 
@@ -47,6 +47,18 @@ import { useSoftUIController, setMiniSidenav, setOpenConfigurator } from "contex
 
 // Images
 import brand from "assets/images/logo-ct.png";
+import Settings from "layouts/profile/components/settings";
+import Widgets from "layouts/widgets";
+import Wizard from "layouts/wizard";
+import Invoice from "layouts/invoice";
+import VideoCall from "layouts/timeline";
+import ExamBuilder from "layouts/products/edit-product";
+import SurveyViewer from "layouts/products/new-product";
+import SignIn from "layouts/authentication/sign-in";
+import SignUp from "layouts/authentication/sign-up";
+import SettingsPage from "./layouts/profile/components/settings";
+import Messages from "layouts/profile/components/messages";
+import RequireAuth from "components/RequireAuth";
 
 export default function App() {
   const [controller, dispatch] = useSoftUIController();
@@ -108,6 +120,13 @@ export default function App() {
       return null;
     });
 
+  const ROLES = {
+    Teacher: 5150,
+    Student: 1984,
+    User: 2001,
+    Admin: 1001,
+  };
+
   const configsButton = (
     <SoftBox
       display="flex"
@@ -153,7 +172,33 @@ export default function App() {
         {layout === "vr" && <Configurator />}
         <Routes>
           {getRoutes(routes)}
-          <Route path="*" element={<Navigate to="/dashboard" />} />
+
+          <Route exact path="/authentication/sign-in" element={<SignIn />} key="sign-in" />
+          <Route exact path="/authentication/sign-up" element={<SignUp />} key="sign-up" />
+
+          <Route element={<RequireAuth allowedRoles={[ROLES.Teacher]} />}>
+            <Route exact path="/applications/wizard" element={<Wizard />} key="wizard" />
+            <Route
+              exact
+              path="/ecommerce/products/edit-product"
+              element={<ExamBuilder />}
+              key="edit-product"
+            />
+          </Route>
+          <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+            <Route path="*" element={<Navigate to="/courses" />} />
+            <Route exact path="/profile/settings" element={<SettingsPage />} key="settings" />
+            <Route exact path="/profile/messages" element={<Messages />} key="messages" />
+            <Route exact path="/courses/course-info/:id" element={<Widgets />} key="course-info" />
+            <Route exact path="/pages/account/invoice" element={<Invoice />} key="event-info" />
+            <Route exact path="/video-lesson/:id" element={<VideoCall />} key="video-lesson" />
+            <Route
+              exact
+              path="/ecommerce/products/new-product"
+              element={<SurveyViewer />}
+              key="new-product"
+            />
+          </Route>
         </Routes>
       </ThemeProvider>
     </CacheProvider>
@@ -177,7 +222,32 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Routes>
         {getRoutes(routes)}
-        <Route path="*" element={<Navigate to="/dashboard" />} />
+        <Route exact path="/authentication/sign-in" element={<SignIn />} key="sign-in" />
+        <Route exact path="/authentication/sign-up" element={<SignUp />} key="sign-up" />
+
+        <Route element={<RequireAuth allowedRoles={[ROLES.Teacher]} />}>
+          <Route exact path="/applications/wizard" element={<Wizard />} key="wizard" />
+          <Route
+            exact
+            path="/ecommerce/products/edit-product"
+            element={<ExamBuilder />}
+            key="edit-product"
+          />
+        </Route>
+        <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+          <Route path="*" element={<Navigate to="/courses" />} />
+          <Route exact path="/profile/settings" element={<SettingsPage />} key="settings" />
+          <Route exact path="/profile/messages" element={<Messages />} key="messages" />
+          <Route exact path="/courses/course-info/:id" element={<Widgets />} key="course-info" />
+          <Route exact path="/pages/account/invoice" element={<Invoice />} key="event-info" />
+          <Route exact path="/video-lesson/:id" element={<VideoCall />} key="video-lesson" />
+          <Route
+            exact
+            path="/ecommerce/products/new-product"
+            element={<SurveyViewer />}
+            key="new-product"
+          />
+        </Route>
       </Routes>
     </ThemeProvider>
   );

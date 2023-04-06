@@ -3,10 +3,10 @@
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
+* Copyright 2022 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
  =========================================================
 
@@ -34,33 +34,13 @@ function Footer() {
         <Grid item xs={10} lg={8}>
           <SoftBox display="flex" justifyContent="center" flexWrap="wrap" mb={3}>
             <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
-              <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Company
+              <SoftTypography component="a" href="https://gwarant-service.pl" target="_blank" variant="body2" color="secondary">
+                Gwarant-Service
               </SoftTypography>
             </SoftBox>
             <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
-              <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                About Us
-              </SoftTypography>
-            </SoftBox>
-            <SoftBox mr={{ xs: 0, lg: 3, xl: 6 }}>
-              <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Team
-              </SoftTypography>
-            </SoftBox>
-            <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
-              <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Product
-              </SoftTypography>
-            </SoftBox>
-            <SoftBox mr={{ xs: 2, lg: 3, xl: 6 }}>
-              <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Blog
-              </SoftTypography>
-            </SoftBox>
-            <SoftBox>
-              <SoftTypography component="a" href="#" variant="body2" color="secondary">
-                Pricing
+              <SoftTypography component="a" href="https://mans.org.pl" target="_blank" variant="body2" color="secondary">
+                MANS
               </SoftTypography>
             </SoftBox>
           </SoftBox>
@@ -86,7 +66,7 @@ function Footer() {
         </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <SoftTypography variant="body2" color="secondary">
-            Copyright &copy; 2021 Soft by Creative Tim.
+            Copyright &copy; 2022 Soft by Gwarant-Service.
           </SoftTypography>
         </Grid>
       </Grid>

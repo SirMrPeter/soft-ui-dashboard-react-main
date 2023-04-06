@@ -3,10 +3,10 @@
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
+* Copyright 2022 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
  =========================================================
 
@@ -29,7 +29,7 @@ import SoftTypography from "components/SoftTypography";
 // custom styles for the NotificationItem
 import { menuItem, menuImage } from "examples/Items/NotificationItem/styles";
 
-const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref) => (
+const NotificationItem = forwardRef(({ color, image, title, ...rest }, ref) => (
   <MenuItem {...rest} ref={ref} sx={(theme) => menuItem(theme)}>
     <SoftBox
       width="2.25rem"
@@ -45,27 +45,6 @@ const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref
     <SoftBox>
       <SoftTypography variant="button" textTransform="capitalize" fontWeight="regular">
         <strong>{title[0]}</strong> {title[1]}
-      </SoftTypography>
-      <SoftTypography
-        variant="caption"
-        color="secondary"
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          mt: 0.5,
-        }}
-      >
-        <SoftTypography variant="button" color="secondary">
-          <Icon
-            sx={{
-              lineHeight: 1.2,
-              mr: 0.5,
-            }}
-          >
-            watch_later
-          </Icon>
-        </SoftTypography>
-        {date}
       </SoftTypography>
     </SoftBox>
   </MenuItem>
@@ -90,7 +69,6 @@ NotificationItem.propTypes = {
   ]),
   image: PropTypes.node.isRequired,
   title: PropTypes.arrayOf(PropTypes.string).isRequired,
-  date: PropTypes.string.isRequired,
 };
 
 export default NotificationItem;

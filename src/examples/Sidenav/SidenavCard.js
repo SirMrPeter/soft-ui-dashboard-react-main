@@ -3,10 +3,10 @@
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
+* Copyright 2022 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
  =========================================================
 
@@ -43,7 +43,7 @@ function SidenavCard() {
           height="2rem"
           borderRadius="md"
           shadow="md"
-          mb={2}
+          mb={7}
           sx={cardIconBox}
         >
           <Icon fontSize="medium" sx={(theme) => cardIcon(theme, { sidenavColor })}>
@@ -51,24 +51,21 @@ function SidenavCard() {
           </Icon>
         </SoftBox>
         <SoftBox lineHeight={1}>
-          <SoftTypography variant="h6" color="white">
-            Need help?
-          </SoftTypography>
           <SoftBox mb={1.825} mt={-1}>
             <SoftTypography variant="caption" color="white" fontWeight="medium">
-              Please check our docs
+              Visit our website
             </SoftTypography>
           </SoftBox>
           <SoftButton
             component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/soft-ui-dashboard/"
+            href="https://www.mans.org.pl/"
             target="_blank"
             rel="noreferrer"
             size="small"
             color="white"
             fullWidth
           >
-            documentation
+            MANS
           </SoftButton>
         </SoftBox>
       </CardContent>

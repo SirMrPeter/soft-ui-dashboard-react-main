@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 /**
 =========================================================
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
+* Copyright 2022 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
  =========================================================
 
@@ -39,14 +40,24 @@ import Settings from "examples/Icons/Settings";
 import breakpoints from "assets/theme/base/breakpoints";
 
 // Images
-import burceMars from "assets/images/bruce-mars.jpg";
 import curved0 from "assets/images/curved-images/curved0.jpg";
 
-function Header() {
+import useAxiosPrivate from "hooks/useAxiosPrivate";
+import useAuth from "hooks/useAuth";
+import { useNavigate } from "react-router-dom";
+
+function Header({ stage }) {
+  const navigate = useNavigate();
+  const axiosPrivate = useAxiosPrivate();
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
   const [tabValue, setTabValue] = useState(0);
+  const { auth } = useAuth();
+  const [imageIrl, setImageUrl] = useState();
 
   useEffect(() => {
+    if (stage) {
+      setTabValue(stage);
+    }
     // A function that sets the orientation state of the tabs.
     function handleTabsOrientation() {
       return window.innerWidth < breakpoints.values.sm
@@ -54,6 +65,14 @@ function Header() {
         : setTabsOrientation("horizontal");
     }
 
+    axiosPrivate
+      .get(`/profile-picture/users/${auth.userId}/picture`, { responseType: "blob" })
+      .then((response) => {
+        setImageUrl(URL.createObjectURL(response.data));
+      })
+      .catch((error) => {
+        console.error("Error fetching image:", error);
+      });
     /** 
      The event listener that's calling the handleTabsOrientation function when resizing the window.
     */
@@ -103,8 +122,8 @@ function Header() {
         <Grid container spacing={3} alignItems="center">
           <Grid item>
             <SoftAvatar
-              src={burceMars}
-              alt="profile-image"
+              src={imageIrl}
+              alt={`${auth.name} ${auth.surname}`}
               variant="rounded"
               size="xl"
               shadow="sm"
@@ -113,10 +132,7 @@ function Header() {
           <Grid item>
             <SoftBox height="100%" mt={0.5} lineHeight={1}>
               <SoftTypography variant="h5" fontWeight="medium">
-                Alex Thompson
-              </SoftTypography>
-              <SoftTypography variant="button" color="text" fontWeight="medium">
-                CEO / Co-Founder
+                {auth.name} {auth.surname}
               </SoftTypography>
             </SoftBox>
           </Grid>
@@ -128,9 +144,13 @@ function Header() {
                 onChange={handleSetTabValue}
                 sx={{ background: "transparent" }}
               >
-                <Tab label="App" icon={<Cube />} />
-                <Tab label="Message" icon={<Document />} />
-                <Tab label="Settings" icon={<Settings />} />
+                <Tab label="Profile" icon={<Cube />} onClick={() => navigate("/profile")} />
+                <Tab label="Messages" icon={<Document />} onClick={() => navigate("/profile/messages")}/>
+                <Tab
+                  label="Settings"
+                  icon={<Settings />}
+                  onClick={() => navigate("/profile/settings")}
+                />
               </Tabs>
             </AppBar>
           </Grid>

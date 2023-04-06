@@ -3,10 +3,10 @@
 * Soft UI Dashboard React - v4.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.gwarant-service.pl/product/soft-ui-dashboard-react
+* Copyright 2022 Gwarant-Service (https://www.gwarant-service.pl)
 
-Coded by www.creative-tim.com
+Coded by Ambro-Dev
 
  =========================================================
 
@@ -28,11 +28,33 @@ import SoftTypography from "components/SoftTypography";
 import SoftAvatar from "components/SoftAvatar";
 import SoftButton from "components/SoftButton";
 
+import useAxiosPrivate from "hooks/useAxiosPrivate";
+import { useState, useEffect } from "react";
+
 function ProfilesList({ title, profiles }) {
-  const renderProfiles = profiles.map(({ image, name, description, action }) => (
+  const axiosPrivate = useAxiosPrivate();
+  const [imageUrls, setImageUrls] = useState([]);
+
+  useEffect(() => {
+    Promise.all(
+      profiles.map((profile) =>
+        axiosPrivate
+          .get(`/profile-picture/users/${profile.user}/picture`, {
+            responseType: "blob",
+          })
+          .then((response) => URL.createObjectURL(response.data))
+          .catch((error) => {
+            console.error("Error fetching image:", error);
+            return null;
+          })
+      )
+    ).then(setImageUrls);
+  }, [axiosPrivate, profiles]);
+
+  const renderProfiles = profiles.map(({ name, description, action }, index) => (
     <SoftBox key={name} component="li" display="flex" alignItems="center" py={1} mb={1}>
       <SoftBox mr={2}>
-        <SoftAvatar src={image} alt="something here" variant="rounded" shadow="md" />
+        <SoftAvatar src={imageUrls[index]} alt="something here" variant="rounded" shadow="md" />
       </SoftBox>
       <SoftBox
         display="flex"

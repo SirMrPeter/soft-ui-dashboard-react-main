@@ -30,7 +30,6 @@ function Settings() {
   const { auth } = useAuth();
 
   useEffect(() => {
-    console.log(auth);
     axiosPrivate
       .get(`/profile-picture/users/${auth.userId}/picture`, { responseType: "blob" })
       .then((response) => {

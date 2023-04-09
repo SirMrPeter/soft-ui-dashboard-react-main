@@ -36,10 +36,8 @@ import useAuth from "hooks/useAuth";
 import { useEffect, useState } from "react";
 import useAxiosPrivate from "hooks/useAxiosPrivate";
 
-const REACT_APP_SERVER_URL = "http://localhost:5500";
-
 function Overview() {
-  const serverUrl = REACT_APP_SERVER_URL;
+  const serverUrl = process.env.REACT_APP_SERVER_URL;
   const { auth } = useAuth();
   const [courses, setCourses] = useState([]);
   const axiosPrivate = useAxiosPrivate();
@@ -48,7 +46,6 @@ function Overview() {
   const [conversationList, setConversationList] = useState();
 
   useEffect(() => {
-    console.log(auth);
     axiosPrivate
       .get(`/profile-picture/users/${auth.userId}/picture`, { responseType: "blob" })
       .then((response) => {
@@ -73,7 +70,6 @@ function Overview() {
       try {
         const { data } = await axiosPrivate.get(`/users/teacher/${auth.userId}/courses`);
         setCourses(data);
-        console.log(data);
         setLoading(false);
       } catch (err) {
         console.error(err);

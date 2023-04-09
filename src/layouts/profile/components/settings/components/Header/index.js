@@ -47,7 +47,6 @@ function Header() {
         },
       }
     );
-    console.log(response.data);
   };
 
   const handleOpen = () => {

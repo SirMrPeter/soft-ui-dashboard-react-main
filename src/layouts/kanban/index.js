@@ -40,7 +40,6 @@ function Courses() {
       try {
         const { data } = await axiosPrivate.get(`/users/${auth.userId}/courses`);
         setCourses(data);
-        console.log(data);
         setLoading(false);
       } catch (err) {
         console.error(err);
@@ -52,7 +51,6 @@ function Courses() {
       try {
         const { data } = await axiosPrivate.get(`/users/teacher/${auth.userId}/courses`);
         setCourses(data);
-        console.log(data);
         setLoading(false);
       } catch (err) {
         console.error(err);

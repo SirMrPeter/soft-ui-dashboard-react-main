@@ -36,10 +36,6 @@ import curved9 from "assets/images/curved-images/curved-6.jpg";
 import axios from "api/axios";
 import socketio from "socket.io-client";
 
-const SOCKET_PORT = "http://localhost:5500";
-
-const LOGIN_URL = "/auth";
-
 function SignIn() {
   const { setSocket } = useContext(SocketContext);
   const [rememberMe, setRememberMe] = useState(false);
@@ -81,7 +77,7 @@ function SignIn() {
 
     try {
       const response = await axios.post(
-        LOGIN_URL,
+        process.env.REACT_APP_LOGIN_URL,
         { email, password },
         {
           headers: { "Content-Type": "application/json" },
@@ -105,7 +101,7 @@ function SignIn() {
         accessToken,
         picture,
       });
-      const newSocket = socketio.connect(SOCKET_PORT);
+      const newSocket = socketio.connect(process.env.REACT_APP_SERVER_URL);
       setSocket(newSocket);
       setEmail("");
       setPassword("");

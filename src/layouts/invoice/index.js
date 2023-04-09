@@ -28,10 +28,8 @@ import useAxiosPrivate from "hooks/useAxiosPrivate";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 
-const REACT_APP_SERVER_URL = "http://localhost:5500";
-
 function Invoice() {
-  const serverUrl = REACT_APP_SERVER_URL;
+  const serverUrl = process.env.REACT_APP_SERVER_URL;
   const [course, setCourse] = useState();
   const axiosPrivate = useAxiosPrivate();
   const { auth } = useAuth();

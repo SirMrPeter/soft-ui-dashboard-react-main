@@ -12,7 +12,7 @@ export default function VideoCall() {
   const axiosPrivate = useAxiosPrivate();
   useEffect(() => {
     let title;
-    const apiKey = "a91eecb1-2191-4a82-803d-c262f6f7082b";
+    const apiKey = process.env.REACT_APP_VIDEOSDK_API;
     const name = `${auth.name} ${auth.surname}`;
 
     axiosPrivate.get(`events/${meetingId}`).then((response) => {
@@ -26,7 +26,7 @@ export default function VideoCall() {
       apiKey,
 
       containerId: null,
-      redirectOnLeave: "http://localhost:3000/",
+      redirectOnLeave: "https://mans.org.pl",
 
       micEnabled: true,
       webcamEnabled: true,

@@ -22,10 +22,8 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import { Avatar } from "@mui/material";
 import SoftAvatar from "components/SoftAvatar";
-
-const REACT_APP_SERVER_URL = "http://localhost:5500";
 function CategoriesList({ title, categories }) {
-  const serverUrl = REACT_APP_SERVER_URL;
+  const serverUrl = process.env.REACT_APP_SERVER_URL;
   const renderItems = categories.map(({ color, image, name, description, route }, key) => (
     <SoftBox
       key={name}

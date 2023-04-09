@@ -64,7 +64,6 @@ function UploadFile({ courseId }) {
         "Content-Type": "multipart/form-data",
       },
     });
-    console.log(response.data);
     setRefreshFiles(!refreshFiles);
   };
 
